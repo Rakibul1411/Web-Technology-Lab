@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: square; /* Custom bullet for unordered list */
+        }
+        ol {
+            list-style-type: decimal; /* Numbered ordered list */
+        }
+        dl dt {
+            font-weight: bold;
+        }
+        dl dd {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Types of Lists</h1>
+
+    <h2>Unordered List (Shopping List)</h2>
+    
+    <ul type = "disk">
+      <li>
+        Coffee
+      </li>
+      <li>
+        Tea
+        <ul type= "disk" >
+          <li>Black tea</li>
+          <li>
+            Green tea
+            <ul>
+              <li>China</li>
+              <li>Africa</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Milk</li>
+    </ul>
+
+</body>
+</html>

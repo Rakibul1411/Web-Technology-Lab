@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Interactive Elements</title>
+</head>
+<body>
+    <h1>Interactive Elements</h1>
+
+    <h2>Canvas Element</h2>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(20, 20, 150, 50);
+    </script>
+
+    <h2>Dialog Element</h2>
+    <dialog id="myDialog">
+        <p>This is a dialog box.</p>
+        <button onclick="document.getElementById('myDialog').close()">Close</button>
+    </dialog>
+    <button onclick="document.getElementById('myDialog').showModal()">Show Dialog</button>
+
+    <h2>Template Element</h2>
+    <template id="myTemplate">
+        <p>This content will be cloned and inserted later.</p>
+    </template>
+    <button onclick="cloneTemplate()">Clone Template</button>
+    <div id="templateContainer"></div>
+    <script>
+        function cloneTemplate() {
+            var template = document.getElementById("myTemplate");
+            var clone = document.importNode(template.content, true);
+            document.getElementById("templateContainer").appendChild(clone);
+        }
+    </script>
+
+    <h2>Embed Element</h2>
+    <embed src="example.pdf" type="application/pdf" width="600" height="400">
+
+    <h2>SVG Element</h2>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+
+    <h2>WBR Element</h2>
+    <p>Here is a long word that will break at a suitable place: word<wbr>break.</p>
+
+    <a href="index.html">Back to Index</a>
+</body>
+</html>

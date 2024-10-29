@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Thead, Tbody, Tfoot, Cellspacing, and Cellpadding</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: separate; /* Use separate borders since cellspacing will not work with collapse */
+        }
+        th, td {
+            border: 1px solid black;
+        }
+        thead {
+            background-color: #f2f2f2;
+        }
+        tfoot {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Product Sales Report</h1>
+
+    <table cellspacing="20" cellpadding="15">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity Sold</th>
+                <th>Unit Price</th>
+                <th>Total Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product A</td>
+                <td>30</td>
+                <td>$15</td>
+                <td>$450</td>
+            </tr>
+            <tr>
+                <td>Product B</td>
+                <td>20</td>
+                <td>$20</td>
+                <td>$400</td>
+            </tr>
+            <tr>
+                <td>Product C</td>
+                <td>50</td>
+                <td>$10</td>
+                <td>$500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Revenue</td>
+                <td>$1350</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

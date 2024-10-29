@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Polyfill Example</title>
+    
+    
+</head>
+<body>
+
+    <button onclick="openDialog()">Open Modal Dialog</button>
+
+    <dialog id="myDialog">
+        <p>This is a dialog box powered by dialog-polyfill!</p>
+        <button onclick="closeDialog()">Close</button>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/dialog-polyfill@0.5.4/dialog-polyfill.min.js"></script>
+    
+    <script>
+        const dialog = document.getElementById('myDialog');
+
+        if (!dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+        }
+
+        function openDialog() {
+            dialog.showModal();
+        }
+
+        function closeDialog() {
+            dialog.close();
+        }
+    </script>
+
+</body>
+</html>
