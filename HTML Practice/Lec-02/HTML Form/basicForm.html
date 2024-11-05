@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Fieldset and Legend</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form action="submit.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Registration Details</legend>
+
+      <!-- Personal Information Section -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+      </fieldset>
+      
+      <!-- Account Details Section -->
+      <fieldset>
+          <legend>Account Details</legend>
+          
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          
+          <label for="confirm_password">Confirm Password:</label>
+          <input type="password" id="confirm_password" name="confirm_password" required>
+      </fieldset>
+      
+      <!-- Preferences Section -->
+      <fieldset>
+          <legend>Preferences</legend>
+          
+          <label for="gender">Gender:</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+
+          <br/>
+          
+          <label for="newsletter">Subscribe to Newsletter:</label>
+          <input type="checkbox" id="newsletter" name="newsletter">
+      </fieldset>
+      
+      <!-- File Upload Section -->
+      <fieldset>
+          <legend>Profile Picture</legend>
+          
+          <label for="profile_pic">Upload a Profile Picture:</label>
+          <input type="file" id="profile_pic" name="profile_pic">
+      </fieldset>
+      
+      <!-- Submit Button -->
+      <fieldset>
+          <button type="submit">Register</button>
+      </fieldset>
+    </fieldset>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Element Example</title>
+</head>
+<body>
+
+<h2>Select Your Preferences</h2>
+
+<form action="submit.php" method="post">
+    <!-- Single Selection Dropdown -->
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+    </select>
+    
+    <br/>
+    <br/>
+
+    <!-- Multiple Selection List with SIZE -->
+    <label for="languages">Languages:</label>
+    <select id="languages" name="languages[]" size="4" multiple>
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+        <option value="german">German</option>
+        <option value="chinese">Chinese</option>
+        <option value="japanese">Japanese</option>
+    </select>
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

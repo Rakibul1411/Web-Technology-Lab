@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Fields Example</title>
+</head>
+<body>
+
+<h2>Form with Various Input Fields</h2>
+
+<form action="submit.php" method="post">
+    <!-- Text Input with SIZE and MAXLENGTH -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" size="24" maxlength="30" required>
+    
+    <!-- Password Input with SIZE and MAXLENGTH -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" size="24" maxlength="20" required>
+    
+    <!-- Radio Button with CHECKED attribute -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    
+    <!-- Checkbox with CHECKED attribute -->
+    <label for="subscribe">Subscribe to Newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe" checked>
+    
+    <!-- Button Input -->
+    <label for="custom_button">Custom Button:</label>
+    <input type="button" id="custom_button" value="Click Me">
+    
+    <!-- Hidden Input -->
+    <input type="hidden" name="hidden_field" value="hidden_value">
+    
+    <!-- File Input -->
+    <label for="file_upload">Upload a File:</label>
+    <input type="file" id="file_upload" name="file_upload">
+    
+    <!-- Reset Button -->
+    <input type="reset" value="Reset Form">
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Submit Form">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Attribute Audio Embed Example</title>
+</head>
+<body>
+
+<h2>Play Sound using Embed Tag</h2>
+
+<!-- Using <embed> Element -->
+<embed 
+    src="108.mp3" 
+    height="50" 
+    width="300" 
+    align="center" 
+    autostart="true"    
+    loop="2"            
+    hidden="false" 
+    volume="70"   
+    pluginspage="https://example.com/plugin-download"
+    name="embedAudio"
+/>
+
+<h2>Play Sound using Object Tag</h2>
+
+<!-- Using <object> Element -->
+<object 
+    data="108.mp3" 
+    height="50" 
+    width="300" 
+    align="center" 
+    autostart="true"    
+    playcount="2"      
+    hidden="false" 
+    name="objectAudio">
+    <param name="autostart" value="true">
+    <param name="playcount" value="2">
+    <param name="volume" value="70">
+    <param name="loop" value="3"> 
+</object>
+
+<h2>Play Sound using HTML5 Audio Tag</h2>
+
+<!-- Using HTML5 <audio> Element -->
+<audio 
+    src="108.mp3" 
+    autoplay         
+    loop             
+    controls  
+>
+    Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>

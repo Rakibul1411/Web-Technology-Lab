@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Attribute Video Embed Example</title>
+</head>
+<body>
+
+<h2>Video Embed using HTML5 Video Element</h2>
+
+<!-- Using HTML5 <video> Element -->
+<video 
+    src="HaramSharif.mp4" 
+    width="600" 
+    height="400" 
+    autoplay  
+    loop            
+    controls   
+>
+    Your browser does not support the video tag.
+</video>
+
+<h2>Video Embed using Embed Tag</h2>
+
+<!-- Using <embed> Element as a Fallback -->
+<embed 
+    src="HaramSharif.mp4" 
+    width="600" 
+    height="400" 
+    autostart="true"  
+    loop="true"      
+    hidden="false"    
+    volume="80"    
+    pluginspage="https://example.com/plugin-download"
+    name="embedVideo"
+/>
+
+<br/>
+
+<h2>Video Embed using Object Tag</h2>
+
+<!-- Using <object> Element as a Fallback -->
+<object 
+    data="HaramSharif.mp4" 
+    width="600" 
+    height="400" 
+    align="center" 
+    autoplay="true"      
+    playcount="3" 
+    hidden="false"      
+    name="objectVideo">
+    <param name="autostart" value="true">
+    <param name="playcount" value="3">
+    <param name="volume" value="80">
+    <param name="loop" value="true">
+    <param name="hidden" value="false">
+</object>
+
+</body>
+</html>

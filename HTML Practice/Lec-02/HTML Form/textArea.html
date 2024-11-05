@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea Example</title>
+</head>
+<body>
+
+<h2>Comments Form</h2>
+
+<form action="submit.php" method="post">
+    <!-- Textarea with WRAP=OFF -->
+    <label for="comments_no_wrap">Comments (No Wrap):</label>
+    <textarea id="comments_no_wrap" name="comments_no_wrap" rows="4" cols="50" wrap="off" placeholder="Type your comment without wrapping..."></textarea>
+    
+    <!-- Textarea with WRAP=VIRTUAL -->
+    <label for="comments_virtual_wrap">Comments (Virtual Wrap):</label>
+    <textarea id="comments_virtual_wrap" name="comments_virtual_wrap" rows="4" cols="50" wrap="virtual" placeholder="Type your comment with virtual wrapping..."></textarea>
+    
+    <!-- Textarea with WRAP=PHYSICAL -->
+    <label for="comments_physical_wrap">Comments (Physical Wrap):</label>
+    <textarea id="comments_physical_wrap" name="comments_physical_wrap" rows="4" cols="50" wrap="physical" placeholder="Type your comment with physical wrapping..."></textarea>
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

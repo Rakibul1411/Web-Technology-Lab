@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Embed Examples</title>
+</head>
+<body>
+
+<h2>Basic Audio with Controls</h2>
+<audio src="108.mp3" controls></audio>
+
+<h2>Auto-playing, Muted Audio with Loop</h2>
+<audio src="108.mp3" autoplay controls loop muted></audio>
+
+<h2>Audio with Preload (auto) and Controls</h2>
+<audio src="108.mp3" preload="auto" controls></audio>
+
+<h2>Audio with Preload (metadata) and Controls</h2>
+<audio src="108.mp3" preload="metadata" controls></audio>
+
+<h2>Autoplaying Audio with Loop and Controls</h2>
+<audio src="108.mp3" autoplay preload="none" loop controls></audio>
+
+<h2>Other Way</h2>
+<audio controls muted>
+  <source src="108.mp3" type="audio/mpeg">
+  <source src="108.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>

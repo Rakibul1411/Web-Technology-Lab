@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+
+<h2>Sample Form</h2>
+
+<form action="submit.php" method="post">
+    <!-- Single Line Text Input -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <!-- Password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <br/>
+    
+    <!-- Radio Input -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <br/>
+    
+    <!-- Checkbox Input -->
+    <label for="subscribe">Subscribe to Newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe">
+
+    <br/>
+    
+    <!-- Select Dropdown -->
+    <label for="country">Country:</label>
+    <select id="country" name="country" size="2">
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="bd" selected>Bangladesh</option>
+        <option value="ksa">Saudi Arabia</option>
+    </select>
+    
+    <br/>
+
+    <!-- Textarea for Multi-line Input -->
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+    <br/>
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
