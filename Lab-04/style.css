@@ -1,0 +1,15 @@
+body {
+  min-height: 2000vh;
+  background-color: rgb(202, 217, 217);
+  background-image: url('pic.avif');
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: bottom right;
+  color: #de0b0b;
+  text-decoration: line-through;
+}
+
+p {
+  word-spacing: 100px;
+  letter-spacing: 10px;
+}

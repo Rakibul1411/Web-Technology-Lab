@@ -1,0 +1,36 @@
+h2 {
+  color: blueviolet;
+}
+
+h2 {
+  color:orange;
+}
+
+#id {
+  color: springgreen;
+}
+
+.title {
+  color: blue;
+}
+
+h3 {
+  color: red;
+}
+
+div {
+  color: rgb(6, 139, 17); /* Parent style applied */
+}
+
+/* Override the inherited style for specific elements */
+p.override {
+  color: red; /* Explicitly styled */
+}
+
+b {
+  color: rgb(172, 36, 18) !important;
+}
+
+b {
+  color: rgb(45, 5, 178);
+}
